@@ -1,0 +1,22 @@
+<mvc:View controllerName="media.project1.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:u="sap.ui.unified">
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>title}">
+                    <content>
+                        <FlexBox direction="Column" class="sapUiLargeMargin">
+                            <Label text="Attach File" labelFor="fileUploader" required="true"/>
+                            <u:FileUploader id="__fileUploader" tooltip="Upload your file to DB" change="onFileChange"/>
+                            <Button text="Upload" press="onUploadFile" type="Emphasized"/>
+                            	<Image ariaDetails="detailsActiveImage" src="media_srv/v2/media/MediaFile(1)/content"
+					decorative="false"/>
+                        </FlexBox>
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
